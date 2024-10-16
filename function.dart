@@ -5,6 +5,11 @@ void main() {
   print(debag);
   var multipul = multi(20, 2);
   print(multipul);
+  var obj = person(10, 20, 30);
+  for (var loop in obj.Name) {
+    print(loop);
+  }
+  ;
 }
 
 Calculate(int x, int y) {
@@ -17,4 +22,15 @@ bag(int x, int y) {
 
 multi(int x, int y) {
   return x * y;
+}
+
+class person {
+  var Name = {
+    "Jamalpur",
+    "Dhaka",
+    "Rajshashi",
+  };
+  person(int x, int y, int z) {
+    print(x + y + z);
+  }
 }
